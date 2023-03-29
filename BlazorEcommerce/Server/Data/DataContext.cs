@@ -156,7 +156,6 @@ namespace BlazorEcommerce.Server.Data
                ImageUrl = "https://upload.wikimedia.org/wikipedia/en/0/0f/Hulk1.jpg",
                Price = 4.99m,
            }
-
                 );
         }
         public DbSet<Product> Products { get; set; }
