@@ -112,7 +112,7 @@ namespace BlazorEcommerce.Server.Data
                Description = "Chonrad Stoeckhlin and the Phantoms of the Night is a study of the arrest and trial of Chonrad Stoecklin (1549–1587), a German herdsman from the town of Oberstdorf who was accused and executed for the crime of witchcraft after experiencing a series of visions. Written by the German historian Wolfgang Behringer, himself a specialist in the Early Modern witch trials of Germany, Shaman of Oberstdorf was initially published in German as Chonrad Stoekhlin und die Nachtschar: Eine Geschichte aus der frühen Neuzeit by R. Piper GmbH & Co. in 1994. It was subsequently translated into English by H.C. Erik Midelfort and published in 1998 by the University of Virginia Press.",
                ImageUrl = "https://upload.wikimedia.org/wikipedia/en/0/08/Shaman_of_Oberstdorf.jpg",
                 
-               CategoryId = 2
+               CategoryId = 1
 
            },
            new Product
@@ -255,6 +255,20 @@ namespace BlazorEcommerce.Server.Data
                     Price = 9.99m,
                     OriginalPrice = 19.99m
                 },
+                 new ProductVariant
+                 {
+                     ProductId = 1,
+                     ProductTypeId = 3,
+                     Price = 23.99m,
+
+                 },
+                  new ProductVariant
+                  {
+                      ProductId = 1,
+                      ProductTypeId = 4,
+                      Price = 22.99m,
+                      OriginalPrice = 39.99m
+                  },
                 new ProductVariant
                 {
                     ProductId = 2,
@@ -398,7 +412,7 @@ namespace BlazorEcommerce.Server.Data
                     Price = 6.99m,
                     OriginalPrice = 21.99m
                 }
-                );
+                ) ;
 
         }
         public DbSet<Product> Products { get; set; }
